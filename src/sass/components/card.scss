@@ -1,0 +1,87 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.cards {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @include md {
+        flex-wrap: nowrap;
+    }
+    .card {
+        border-radius:4px;
+        box-shadow: 1px 1px 5px 0px #CCC;
+        width:100%;
+        box-sizing: border-box;
+        margin-right:0;
+        border:1px solid #EEE;
+        padding:15px;
+        font-size:1.1em;
+        flex: 1 1 auto;
+        margin-bottom:20px;
+        position:relative;
+
+        @include md {
+            width:50%;
+            flex: 1 1 auto;
+            margin-right:20px;
+        }
+
+        &.last {
+            margin-right:0;
+        }
+
+        table {
+            width:100%;
+        }
+
+        .card__title {
+            margin-top:0;
+            padding-top:0;
+        }
+
+        .card__text--big {
+            font-size:1.5em;
+            font-weight:750;
+        }
+        .card__text--small {
+            font-size:0.8em;
+            color:#888;
+            font-weight:bold;
+        }
+        .card__space-top {
+            margin-top:15px;
+        }
+
+        .card__action-side {
+            position: absolute;
+            top:10px;
+            right:10px;
+            background:#EEE;
+            color:#000;
+            text-align:center;
+            padding:7px;
+            padding-left:10px;
+            padding-right:10px;
+        }
+        .card__buttons {
+            display:flex;
+        }
+        .button {
+            margin-top:0;
+        }
+        .button, .button-clean {
+            background:#CB1619;
+            font-size:1em;
+            padding:10px;
+            color:#FFF;
+            font-weight:normal;
+        }
+        .button-clean {
+            background:#FFF;
+            color:#CB1619;
+            margin-left:20px;
+        }
+    }
+}

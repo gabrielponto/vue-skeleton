@@ -1,0 +1,49 @@
+// The most small screens
+$screen-xs-min: 0;
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+$default-radius: 4px;
+
+// 1. Fonts
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-size: 1em;
+$font-leading: 1.5;
+
+// 2. Colors
+$brand: #030;
+$brand-dark: #090;
+$warning: #ff5050;
+$space: #FFF;
+$space-b: #FCFCFC;
+$space-grey: #121f33;
+$space-void: #0B1725;
+
+// 2.1 Grayscale
+$grey-dark: #333333;
+$grey: #95a4ac;
+$grey-light: #95a4ac;
+$grey-smoke-dark: #cfd8e6;
+$grey-smoke: #e7ebf2;
+$grey-bg: #f3f5f8;
+
+// 3. Helpers
+$transitions: 0.3s ease;
+
+// 4. Breackpoints
+$gutter: 1em; // 32px;
+$gutter-larger: 2em; // 16px;
+$container: 74em; // 1184px;
+$tablet: 1000px;
+$mobile: 415px;
+$marketplace-break: 700px;

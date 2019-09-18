@@ -1,0 +1,238 @@
+.button {
+    padding: 15px 30px 15px 30px;
+    background:#CCC;
+    border:0;
+    border-radius:4px;
+    color:#000;
+    font-weight:bold;
+    font-size:1.4em;
+    cursor:pointer;
+    margin-top:15px;
+
+    &.button-block {
+        display:block;
+        width:100%;
+        margin-top:20px;
+        text-align:center;
+        margin-left:0;
+    }
+
+    &.button-center {
+        display:block;
+        width:100%;
+        padding-left:30px;
+        padding-right:30px;
+
+        @include md {
+            width:auto;
+            text-align:center;
+            padding-left:50px;
+            padding-right:50px;
+            margin: 0 auto;
+        }
+    }
+
+    &.button-success {
+        background:green;
+        color:#FFF;
+    }
+    &:disabled {
+        background:#AFA;
+        cursor: not-allowed;
+    }
+}
+
+.home-button {
+    border-top:1px solid #CCC;
+    padding-top:15px;
+    padding-bottom:15px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .home-button__icon-wrapper {
+        display:block;
+        flex:1;
+        margin-top: 4px;
+        margin-right: 10px;
+    }
+
+    .home-button__icon {
+        background:#e42110;
+        color:#FFF;
+        width:40px;
+        height:40px;
+        border-radius:5px;
+        text-align:center;
+        line-height:40px;
+        vertical-align: middle;
+
+        img {
+            max-width:35px;
+            height:34px;
+            margin-top:3px;
+        }
+    }
+    .home-button__icon--primary {
+        background:#e42110;
+        color:#FFF;
+    }
+    .home-button__icon--secondary {
+        background:#ADD3F8;
+        color:#FFF;
+    }
+    .home-button__icon--logo {
+        background:#EEE;
+        color:#000;
+    }
+
+    .home-button__text {
+        flex:12;
+
+        h3 {
+            font-size:1em;
+            color:#333;
+            margin:0;
+            padding-bottom:5px;
+        }
+
+        p {
+            font-size:0.9em;
+            color:#666;
+            margin-top:0;
+        }
+
+        &.home-button__text--oneline {
+            margin-left:0;
+            padding-top:8px;
+        }
+    }
+
+    .home-button__icon--next {
+        display:block;
+        margin-top:10px;
+        color:#999;
+        position:relative;
+        right:0;
+    }
+
+    &:hover {
+        .home-button__icon--next {
+            right:10px;
+        }
+    }
+}
+
+input, select {
+    padding:10px;
+    font-size:1.3em;
+    border-radius:4px;
+    border:1px solid #666;
+    width:100%;
+
+    &.is-invalid {
+        border:1px solid red;
+    }
+    &.is-valid {
+        border:1px solid green;
+    }
+}
+
+label {
+    display:block;
+}
+
+.text-invalid, .text-error {
+    color:red;
+}
+
+.hide {
+    display:none;
+}
+
+.m-b {
+    margin-bottom:10px;
+}
+
+.small {
+    font-size:0.9em;
+}
+
+.alert {
+    width:100%;
+    display:block;
+    padding:10px;
+    border:1px solid #CCC;
+    color:#666;
+    background:#F3F3F3;
+    border-radius:4px;
+
+    &.error {
+        background:#FDD;
+        border:1px solid red;
+        color:red;
+    }
+}
+
+.modal {
+    position:fixed;
+    left: 50%;
+    top: 50%;
+    transform: perspective(1px) translate(-50%, -50%);
+    border-radius:4px;
+    background:#FFF;
+    display:none;
+    max-height:80%;
+    overflow: auto;
+    z-index:10000000000;
+
+    .modal__title {
+        border-bottom:1px solid #CCC;
+        padding:20px;
+    }
+
+    .modal__content {
+        padding:20px;
+    }
+}
+
+.page-alert {
+    text-align:center;
+    border-radius:4px;
+    border:1px solid #EEE;
+
+    .page-alert__title {
+        background:#CB1619;
+        text-align:center;
+        font-size:2em;
+        padding:30px;
+        color:#FFF;
+    }
+    .page-alert__details {
+        padding:70px;
+    }
+}
+.loading-block {
+    background-image:url(assets/images/loading.png);
+    background-position:center bottom;
+    background-repeat: no-repeat;
+    padding:30px;
+    padding-bottom:80px;
+    font-weight:bold;
+    font-size:1.4em;
+    text-align:center;
+}
+.breadcrumb {
+    font-size:0.9em;
+}
+.text-black {
+    color:#000;
+}
+.text-right {
+    text-align: right;
+}
+.text-left {
+    text-align:left;
+}
+.text-center {
+    text-align:center;
+}
